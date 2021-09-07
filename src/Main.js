@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import {Switch, Route} from "react-router-dom";
 import Features from "./Features";
 import Contact from "./Contact";
+import NotFound from "./NotFound";
 
 function Main(props) {
     return (
@@ -20,6 +21,9 @@ function Main(props) {
                 </Route>
                 <Route path="/contact">
                     <Contact />
+                </Route>
+                <Route>
+                    <NotFound />
                 </Route>
             </Switch>
 
